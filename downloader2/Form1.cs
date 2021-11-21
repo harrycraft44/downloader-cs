@@ -1,4 +1,5 @@
-﻿ 
+﻿using System.Diagnostics;
+
 using System;
 using System.Net;
 using System.Collections.Generic;
@@ -33,6 +34,7 @@ namespace downloader2
     public static String df = "Output.txt"; // Modifiable
     public static String of = "Output.txt"; // Modifiable
     public static bool etz = false; // Modifiable
+    public static bool run = false; // Modifiable
     public static bool rtz = false; // Modifiable
     public static Form2 f = new Form2();
         public Form1(string file)
@@ -69,6 +71,11 @@ namespace downloader2
                         rtz = true;
 
                     }
+                    else if (line == "run")
+                    {
+                        run = true;
+
+                    }
                     else if (line == "extractzip")
                     {
                         etz = true;
@@ -84,7 +91,7 @@ namespace downloader2
             else {
                 progressBar1.Hide();
                 pictureBox1.Hide();
-            
+                f.ShowDialog();
             }
             
         }
@@ -131,6 +138,10 @@ namespace downloader2
             }
             
             MessageBox.Show("File succesfully downloaded");
+            if (run) {
+                Process.Start(df);
+
+            }
             if (etz)
             {
                 System.IO.Directory.CreateDirectory(of + "/extract/");
