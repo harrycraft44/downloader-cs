@@ -54,6 +54,7 @@ namespace downloader2
                     writer.WriteLine("URL=" + URLB.Text);
                     writer.WriteLine("ENDPATH=" + ENDPATHB.Text);
                     writer.WriteLine("SHOWDBAR=" + SHOWDBAR.Checked.ToString());
+                    writer.WriteLine(comboBox1.Text.Replace("None",""));
                     writer.WriteLine("start");
                 }
             }

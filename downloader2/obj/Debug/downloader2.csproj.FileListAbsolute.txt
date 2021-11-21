@@ -31,4 +31,3 @@ C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Memory.xml
 C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Text.Encoding.CodePages.xml
-C:\Users\harry\source\repos\downloader\downloader2\obj\Debug\downloader2.csproj.CopyComplete

@@ -1,4 +1,4 @@
 URL=https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-602.exe
-ENDPATH=D:\desktop\winrar
+ENDPATH=desktop\winrar
 SHOWDBAR=true
 start

@@ -59,7 +59,7 @@ namespace downloader2
                     }
                     else if (line.StartsWith("SHOWDBAR="))
                     {
-                        if (line.Replace("SHOWDBAR=", "") == "True")
+                        if (line.Replace("SHOWDBAR=", "") == "False")
                         {
                             progressBar1.Hide();
                         }
@@ -131,23 +131,27 @@ namespace downloader2
             }
             
             MessageBox.Show("File succesfully downloaded");
-            if (etz) {
+            if (etz)
+            {
                 System.IO.Directory.CreateDirectory(of + "/extract/");
 
                 ZipFile.ExtractToDirectory(df, of + "/extract/");
+                this.Close();
 
-
-            } else if (rtz) {
+            }
+            else if (rtz)
+            {
 
 
                 using (ArchiveFile archiveFile = new ArchiveFile(df))
                 {
                     archiveFile.Extract(of + "/extract/"); // extract all
                 }
-
+                this.Close();
 
 
             }
+            else { this.Close(); }
         }
 
 
