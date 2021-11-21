@@ -10,14 +10,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
+using System.IO.Compression;
+using SevenZipExtractor;
 
 namespace downloader2
 {
-
+    [Flags]
+    public enum ExtractOptions
+    {
+        None,
+        /// <summary>
+        /// overwrite target if it exists
+        /// </summary>
+        Overwrite,
+        /// <summary>
+        /// extract with internal directory structure
+        /// </summary>
+        ExtractFullPath,
+    }
     public partial class Form1 : Form
     {   
     public static String df = "Output.txt"; // Modifiable
+    public static String of = "Output.txt"; // Modifiable
+    public static bool etz = false; // Modifiable
+    public static bool rtz = false; // Modifiable
     public static Form2 f = new Form2();
         public Form1(string file)
         {
@@ -39,11 +55,24 @@ namespace downloader2
                     else if (line.StartsWith("ENDPATH="))
                     {
                         endp = line.Replace("ENDPATH=", "");
+                        System.IO.Directory.CreateDirectory(endp);
                     }
                     else if (line.StartsWith("SHOWDBAR="))
                     {
-                        sdb = line.Replace("SHOWDBAR=", "") == "true";
+                        if (line.Replace("SHOWDBAR=", "") == "True")
+                        {
+                            progressBar1.Hide();
+                        }
+                    }
+                    else if (line == "extractall")
+                    {
+                        rtz = true;
 
+                    }
+                    else if (line == "extractzip")
+                    {
+                        etz = true;
+                        
                     }
                     else if (line == "start")
                     {
@@ -62,6 +91,7 @@ namespace downloader2
 
         private void downloadFile(string ur2l, string ul)
         {
+            of = ul;
             string desktopPath = ul;
             // This will download a large image from the web, you can change the value
             // i.e a textbox : textBox1.Text
@@ -101,6 +131,23 @@ namespace downloader2
             }
             
             MessageBox.Show("File succesfully downloaded");
+            if (etz) {
+                System.IO.Directory.CreateDirectory(of + "/extract/");
+
+                ZipFile.ExtractToDirectory(df, of + "/extract/");
+
+
+            } else if (rtz) {
+
+
+                using (ArchiveFile archiveFile = new ArchiveFile(df))
+                {
+                    archiveFile.Extract(of + "/extract/"); // extract all
+                }
+
+
+
+            }
         }
 
 

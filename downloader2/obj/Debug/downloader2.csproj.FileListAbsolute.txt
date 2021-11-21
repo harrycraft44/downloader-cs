@@ -18,3 +18,17 @@ C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\Interop.WMPLib.dll
 C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\AxInterop.SHDocVw.dll
 C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\AxInterop.WMPLib.dll
 C:\Users\harry\source\repos\downloader\downloader2\obj\Debug\downloader2.Form2.resources
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\x64\7z.dll
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\x86\7z.dll
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\SevenZipExtractor.dll
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Buffers.dll
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Memory.dll
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Buffers.xml
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Memory.xml
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\harry\source\repos\downloader\downloader2\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\harry\source\repos\downloader\downloader2\obj\Debug\downloader2.csproj.CopyComplete
