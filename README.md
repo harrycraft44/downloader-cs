@@ -1,7 +1,8 @@
 # downloader-cs
 a simple installer that uses a custom file type 
 
-use
+<h1>use</h1>
+create a text file put the code in and save it as a .dl
 download file
 ```
 URL=https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-602.exe
@@ -28,3 +29,49 @@ extractzip
 start
 
 ```
+extractzip is only zip but extractall extracts the following
+7Zip
+APM
+Arj
+BZip2
+Cab
+Chm
+Compound
+Cpio
+CramFS
+Deb
+Dll
+Dmg
+Exe
+Fat
+Flv
+GZip
+Hfs
+Iso
+Lzh
+Lzma
+Lzma86
+Mach-O
+Mbr
+Mub
+Nsis
+Ntfs
+Ppmd
+Rar
+Rar5
+Rpm
+Split
+SquashFS
+Swf
+Swfc
+Tar
+TE
+Udf
+UEFIc
+UEFIs
+Vhd (?)
+Wim
+Xar
+XZ
+Z
+Zip
