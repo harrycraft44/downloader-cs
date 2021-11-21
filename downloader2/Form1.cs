@@ -16,19 +16,7 @@ using SevenZipExtractor;
 
 namespace downloader2
 {
-    [Flags]
-    public enum ExtractOptions
-    {
-        None,
-        /// <summary>
-        /// overwrite target if it exists
-        /// </summary>
-        Overwrite,
-        /// <summary>
-        /// extract with internal directory structure
-        /// </summary>
-        ExtractFullPath,
-    }
+   
     public partial class Form1 : Form
     {   
     public static String df = "Output.txt"; // Modifiable
